@@ -7958,11 +7958,11 @@ ul {
 }
 
 .servicos__item:hover {
-    background: rgba(78,184,0,.25)
+    background: #00545f
 }
 
 .servicos__item.\--dark {
-    background: #013a41
+    background: #00545f
 }
 
 .servicos__item .btn {
@@ -7974,7 +7974,7 @@ ul {
 }
 
 .servicos__item .btn:hover {
-    background: #0f8b97
+    background: #00545f
 }
 
 .servicos__title {
