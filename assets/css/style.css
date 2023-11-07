@@ -8451,6 +8451,35 @@ ul {
     object-position: right
 }
 
+#equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+.membro {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+.membro img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.membro h3{
+    margin: 25px;
+}
+.membro h3, .membro p {
+    flex-grow: 1;
+}
+
+
 @media (max-width: 991px) {
     .page__section {
         padding:3rem 0
