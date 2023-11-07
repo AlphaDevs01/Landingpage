@@ -7514,10 +7514,10 @@ ul {
 }
 
 .cta {
-    padding: 9.125rem 0;
-    background: url(../images/banner-cta.jpg) 50% no-repeat;
+    padding: 1rem;
+    background: url(uploads/banner2.jpg) 50% no-repeat;
     background-size: cover;
-    color: #fff
+    color: #fff;
 }
 
 .cta__title {
@@ -7528,7 +7528,7 @@ ul {
 }
 
 .cta__list {
-    margin-top: 3.5rem
+    margin-top: -5.5rem
 }
 
 .cta__item {
@@ -8526,6 +8526,23 @@ ul {
 
     .page__subtitle {
         font-size: 1.65rem
+    }
+    #equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-left: 25px;
+    }
+
+    .membro {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Ocupar toda a largura em telas menores */
+        margin: 10px;
+        padding: 10px;
+        flex-direction: column; /* Alinhar elementos verticalmente em telas menores */
+        text-align: center; /* Centralizar o texto */
     }
 }
 
