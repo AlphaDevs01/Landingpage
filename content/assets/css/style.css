@@ -7515,9 +7515,9 @@ ul {
 
 .cta {
     padding: 1rem;
-    background: url(uploads/banner2.jpg) 50% no-repeat;
+    background: url(content/uploads/banner2.jpg) 50% no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #000000;
 }
 
 .cta__title {
@@ -7528,7 +7528,7 @@ ul {
 }
 
 .cta__list {
-    margin-top: -5.5rem
+    margin-top: 5.5rem
 }
 
 .cta__item {
