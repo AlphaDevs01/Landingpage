@@ -2500,14 +2500,14 @@
       function litespeed_inline2src(t) {
         try {
           var d = urlCreator.createObjectURL(
-            new Blob([t.replace(/^(?:<!--)?(.*?)(?:-->)?$/gm, "$1")], {
+            new Blob([t.replace(/^(?:<! --)?(.*?)(?:-->)?$/gm , "$1") ] , {
               type: "text/javascript",
             })
           );
         } catch (e) {
           d =
             "data:text/javascript;base64," +
-            btoa(t.replace(/^(?:<!--)?(.*?)(?:-->)?$/gm, "$1"));
+            btoa(t.replace(/^(?:<! --)?(.*?)(?:-->)?$/gm, "$1"));
         }
         return d;
       }
