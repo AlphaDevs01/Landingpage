@@ -7,6 +7,7 @@ import Portfolio from '../components/Portfolio';
 // import Testimonials from '../components/Testimonials'; // Removido
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { Projects } from '../components/projects'; // Importa a sessão de projetos
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       <PricingTable /> {/* Adicionado aqui */}
       <About />
       <Portfolio />
+      <Projects /> {/* Adiciona a sessão de projetos aqui */}
       {/* <Testimonials /> */} {/* Removido */}
       <Contact />
       <Footer />
