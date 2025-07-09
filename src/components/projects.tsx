@@ -10,37 +10,37 @@ export const Projects = () => {
     {
       title: 'Prados Embalagens',
       description: 'E-commerce institucional simples e direto.',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/predos_embalagens.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/predos_embalagens.png', // imagem do print fornecida
       link: 'https://prados-embalagens.vercel.app',
     },
     {
       title: 'Lokar Veículos',
       description: 'Plataforma para locação e visualização de veículos.',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/lokar.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/lokar.png', // imagem do print fornecida
       link: 'https://www.lokarveiculos.com.br',
     },
     {
       title: 'FinancEasy',
       description: 'Sistema de controle financeiro pessoal moderno.',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/financEasy.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/financEasy.png', // imagem do print fornecida
       link: 'https://financeasy.alphadevss.com.br',
     },
     {
       title: 'AlphaDevs',
       description: 'Website da startup de desenvolvimento digital que cofundei.',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/alphaDevss.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/alphaDevss.png', // imagem do print fornecida
       link: 'http://alphadevss.com.br',
     },
     {
       title: 'Sistema Restaurant',
       description: 'Sistema Para grandes e pequenos restaurantes',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/sistemaRestaurant.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/sistemaRestaurant.png', // imagem do print fornecida
       link: 'https://sistema-restaurant-3iea.vercel.app',
     },
     {
       title: 'Sistema Atendimento Tecnico',
       description: 'Sistema Para atendimentos tecnicos e suporte ao cliente para empresas que tenham um pos venda.',
-      imageUrl: 'https://raw.githubusercontent.com/DiomarGoncalves/cv-online/refs/heads/main/src/assets/atendimentos.png', // imagem do print fornecida
+      imageUrl: 'https://raw.githubusercontent.com/AlphaDevs01/Landingpage/refs/heads/main/src/assets/atendimentos.png', // imagem do print fornecida
       link: 'https://systema-atendimento-tecnico.vercel.app/',
     },
   ];
