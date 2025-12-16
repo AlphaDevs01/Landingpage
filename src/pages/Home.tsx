@@ -4,7 +4,7 @@ import Services from '../components/Services';
 import PricingTable from '../components/PricingTable'; // Adicionado
 import About from '../components/About';
 import Portfolio from '../components/Portfolio';
-// import Testimonials from '../components/Testimonials'; // Removido
+import TeamSection from '../components/TeamSection';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { Projects } from '../components/projects'; // Importa a sessão de projetos
@@ -17,8 +17,8 @@ const Home: React.FC = () => {
       <PricingTable /> {/* Adicionado aqui */}
       <About />
       <Portfolio />
-      <Projects /> {/* Adiciona a sessão de projetos aqui */}
-      {/* <Testimonials /> */} {/* Removido */}
+      <Projects /> 
+      <TeamSection />
       <Contact />
       <Footer />
     </main>
