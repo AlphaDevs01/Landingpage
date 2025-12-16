@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
 
     const serviceId = 'service_ymsx9tb';
-    const templateId = 'template_jzfzvww';
+    const templateId = 'template_o68vlob';
     const userId = 'Q4Ri7TESdrrlc45_d';
 
     emailjs.send(serviceId, templateId, formData, userId)
