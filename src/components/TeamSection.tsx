@@ -98,7 +98,7 @@ const TeamSection: React.FC = () => {
               className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
             >
               {/* Imagem do Membro */}
-              <div className="relative h-150 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
+              <div className="relative h-100 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
                 {isLoading ? (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="h-12 w-12 animate-spin rounded-full border-4 border-gray-600 border-t-blue-500"></div>
