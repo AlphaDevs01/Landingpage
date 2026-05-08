@@ -70,7 +70,7 @@ export const Projects = () => {
             : 'opacity-0 translate-y-10'
         } ${textPrimary}`}>
           <span>Meus</span>
-          <span className={`${isDarkMode ? 'text-green-500' : 'text-green-600'} ml-2`}>Projetos</span>
+          <span className={`${isDarkMode ? 'text-blue-900' : 'text-blue-900'} ml-2`}>Projetos</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
