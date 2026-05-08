@@ -31,14 +31,6 @@ const TeamSection: React.FC = () => {
       bio: 'Desenvolvedor Full Stack com mais de 5 anos de experiência na criação de sistemas web escaláveis e orientados a performance. Fundador de projetos digitais focados em soluções modernas para negócios, com forte atuação em React, Node.js e arquitetura de microsserviços. Experiência no desenvolvimento de aplicações robustas, painéis administrativos e APIs de alta disponibilidade.',
       portfolioUrl: 'https://diomargoncalves.alphadevss.com.br/',
       imageUrl: 'diomar.png'
-    },
-    {
-      id: 'oliveira',
-      name: 'Davi Oliveira',
-      role: 'Backend Developer Júnior & Co-fundador',
-      bio: "Especialista em JavaScript/NodeJS, trabalhando a mais de 3 anos em desenvolvimento de api's backend, aplicações e websites com funcionalidades completas.",
-      portfolioUrl: 'https://oliveira.alphadevss.com.br/',
-      imageUrl: '/oliveira.jpg'
     }
   ];
 
