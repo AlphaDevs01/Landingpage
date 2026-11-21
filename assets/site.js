@@ -2,6 +2,10 @@
   const root = document.documentElement;
   const menu = document.querySelector('#menu');
   const toggle = document.querySelector('.menu-toggle');
+  const navigation = Array.from(menu.querySelectorAll('a:not([hidden])'), (link) => ({
+    link,
+    section: document.querySelector(link.hash),
+  }));
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const narrowViewport = window.matchMedia('(max-width: 760px)');
   const hero = document.querySelector('.hero');
@@ -10,6 +14,7 @@
   const views = Array.from(document.querySelectorAll('[data-view]'));
   const steps = Array.from(document.querySelectorAll('.demo-steps i'));
   let activeScene = 0;
+  let activeLink = null;
   let scheduled = false;
 
   root.classList.add('js');
@@ -60,7 +65,18 @@
     const viewport = window.innerHeight;
     const distance = root.scrollHeight - viewport;
     const scroll = Math.max(window.scrollY, 0);
-    root.style.setProperty('--reading', distance > 0 ? Math.min(scroll / distance, 1) : 0);
+    const progress = distance > 0 ? Math.min(scroll / distance, 1) : 0;
+    let currentLink = null;
+    for (const item of navigation) {
+      if (item.section.getBoundingClientRect().top <= 160) currentLink = item.link;
+    }
+    if (progress > 0.99) currentLink = navigation.at(-1).link;
+    if (currentLink !== activeLink) {
+      activeLink?.removeAttribute('aria-current');
+      currentLink?.setAttribute('aria-current', 'location');
+      activeLink = currentLink;
+    }
+    root.style.setProperty('--reading', progress);
 
     if (motion.matches) {
       selectScene(0);
@@ -68,7 +84,7 @@
     }
 
     if (scroll < hero.offsetHeight + viewport) {
-      root.style.setProperty('--hero-shift', Math.min(scroll * 0.12, 72) + 'px');
+      root.style.setProperty('--hero-shift', Math.min(scroll * 0.075, 33) + 'px');
     }
 
     const demoBox = demo.getBoundingClientRect();

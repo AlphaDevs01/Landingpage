@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10110f">
-  <meta name="description" content="A AlphaDevss desenvolve sistemas, sites e automações sob medida para empresas. Conheça nossos projetos e converse sobre o seu.">
+  <meta name="description" content="A AlphaDevss desenvolve sistemas, sites e automações sob medida para empresas. Conheça os serviços de desenvolvimento e converse sobre seu projeto.">
   <title>AlphaDevss — Tecnologia para sua empresa</title>
-  <link rel="icon" href="assets/alphadevss-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/alphadevss-icone.png" type="image/png" sizes="64x64">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
   <header class="header">
     <div class="progress" aria-hidden="true"></div>
     <div class="wrap header-inner">
-      <a class="wordmark" href="#inicio" aria-label="AlphaDevss, início"><img src="assets/alphadevss-mark.svg" alt="" width="37" height="37"><span><strong>Alpha</strong>Devss</span></a>
+      <a class="wordmark" href="#inicio" aria-label="AlphaDevss, início"><img class="brand-symbol" src="assets/alphadevss-simbolo.webp" alt="" width="44" height="27"><img class="brand-lettering" src="assets/alphadevss-lettering.webp" alt="" width="132" height="23"></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu<span aria-hidden="true"></span></button>
       <nav id="menu" aria-label="Navegação principal">
         <a href="#solucoes">Serviços</a>
@@ -32,17 +32,34 @@
 
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-art" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="wrap hero-content">
-        <div class="overline"><span class="marker" aria-hidden="true"></span> Tecnologia para sua empresa</div>
-        <h1 id="hero-title">Transformando<br>ideias em<br><em>realidade digital.</em></h1>
-        <p>De sistemas de e-mail a plataformas financeiras, desenvolvemos software sob medida para melhorar a operação da sua empresa.</p>
-        <div class="actions">
-          <a class="button" href="#contato">Fale sobre seu projeto</a>
-          <a class="button button-outline" href="#solucoes">Conheça nossos serviços</a>
+            <div class="wrap">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="overline">Tecnologia para sua empresa</div>
+            <h1 id="hero-title">Transformando ideias<br> em <em>realidade digital.</em></h1>
+            <p>Sistemas, automações e sites sob medida para o seu negócio.</p>
+            <div class="actions">
+              <a class="button" href="#contato">Fale sobre seu projeto</a>
+              <a class="button button-outline" href="#solucoes">Conheça nossos serviços</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-shot">
+              <img src="assets/hero.webp" alt="" width="1536" height="1024" fetchpriority="high">
+            </div>
+            <div class="hero-flow">
+              <div class="hero-flow-heading"><span>Exemplo de automação</span><i aria-hidden="true"></i></div>
+              <ol class="flow-track">
+                <li>Dados</li><li>Validação</li><li>Relatório</li>
+              </ol>
+            </div>
+          </div>
         </div>
-        <a class="scroll-cue" href="#solucoes"><span class="scroll-mouse" aria-hidden="true"></span> Explore as soluções</a>
+        <nav class="hero-services" aria-label="Explorar soluções">
+          <a href="#sistemas"><span class="service-icon icon-systems" aria-hidden="true"></span>Sistemas sob medida</a>
+          <a href="#automacoes"><span class="service-icon icon-flow" aria-hidden="true"></span>Automações e integrações</a>
+          <a href="#sites"><span class="service-icon icon-web" aria-hidden="true"></span>Sites e aplicações web</a>
+        </nav>
       </div>
     </section>
 
@@ -80,19 +97,19 @@
             <div class="demo-bottom"><span>Exemplo de interface</span><div class="demo-steps"><i class="active"></i><i></i><i></i></div></div>
           </div>
           <div class="scenes">
-            <article class="scene is-active reveal" data-scene="0">
+            <article class="scene is-active reveal" id="sistemas" data-scene="0">
               <span class="scene-type">Sistemas sob medida</span>
               <h3>Centralize a operação.</h3>
               <p>Reúna pedidos, estoque, atendimento ou financeiro em um painel com os dados que sua equipe precisa para decidir.</p>
               <ul class="tags"><li>Painéis de gestão</li><li>Relatórios</li><li>Controle de acesso</li></ul>
             </article>
-            <article class="scene reveal" data-scene="1">
+            <article class="scene reveal" id="automacoes" data-scene="1">
               <span class="scene-type">Automações e integrações</span>
               <h3>Recupere tempo da equipe.</h3>
               <p>Conecte planilhas, formulários e sistemas. Automatize as tarefas que todo mundo repete, como copiar dados, enviar avisos e gerar relatórios.</p>
               <ul class="tags"><li>Excel e Google Sheets</li><li>APIs</li><li>Notificações</li></ul>
             </article>
-            <article class="scene reveal" data-scene="2">
+            <article class="scene reveal" id="sites" data-scene="2">
               <span class="scene-type">Sites e aplicações web</span>
               <h3>Facilite o próximo contato.</h3>
               <p>Mostre seus serviços, apresente seus produtos e dê ao cliente um caminho claro para comprar, reservar ou pedir orçamento, inclusive pelo celular.</p>
@@ -228,7 +245,6 @@
       <div class="wrap">
         <div class="contact-panel reveal">
           <div class="contact-content">
-            <div class="overline"><span class="marker"></span> Fale com a gente</div>
             <h2 id="contact-title">Entre em <em>contato.</em></h2>
             <p>Fale sobre o seu projeto para combinar os próximos passos.</p>
           </div>
@@ -242,7 +258,7 @@
   </main>
   <footer class="footer">
     <div class="wrap footer-inner">
-      <a class="wordmark" href="#inicio" aria-label="AlphaDevss, voltar ao início"><img src="assets/alphadevss-mark.svg" alt="" width="37" height="37"><span><strong>Alpha</strong>Devss</span></a>
+      <a class="wordmark" href="#inicio" aria-label="AlphaDevss, voltar ao início"><img class="brand-symbol" src="assets/alphadevss-simbolo.webp" alt="" width="44" height="27"><img class="brand-lettering" src="assets/alphadevss-lettering.webp" alt="" width="132" height="23"></a>
       <span>© 2026 AlphaDevss · Goiás, Brasil</span>
       <div><a href="https://www.instagram.com/alphadevss/" target="_blank" rel="noopener noreferrer">Instagram</a></div>
     </div>
